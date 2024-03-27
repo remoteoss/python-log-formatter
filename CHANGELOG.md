@@ -2,6 +2,13 @@
 
 
 
+## v0.1.1 (2024-03-27)
+
+### Fix
+
+* fix: releases depends on test, config pyproject.toml for semantic release (#2) ([`ed08de3`](https://github.com/remoteoss/python-log-formatter/commit/ed08de3665c15fda70eb865f9a7fd71fe2141721))
+
+
 ## v0.1.0 (2024-03-27)
 
 ### Feature
