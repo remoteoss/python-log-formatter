@@ -2,6 +2,13 @@
 
 
 
+## v0.1.2 (2024-03-27)
+
+### Fix
+
+* fix: dependency (#3) ([`46d05e8`](https://github.com/remoteoss/python-log-formatter/commit/46d05e82cddf6573459888c889c4a1c269305d00))
+
+
 ## v0.1.1 (2024-03-27)
 
 ### Fix
