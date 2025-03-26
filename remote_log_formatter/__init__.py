@@ -108,5 +108,5 @@ def get_logger(name: str = "remote") -> logging.Logger:
     return logging.getLogger(name)
 
 
-def set_logging_level(logger: str, level: logging._Level) -> None:
+def set_logging_level(logger: str, level: int | str) -> None:
     logging.getLogger(logger).setLevel(level)
