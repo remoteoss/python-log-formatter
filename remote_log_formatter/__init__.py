@@ -4,6 +4,7 @@ import logging.config
 import os
 import sys
 from datetime import datetime
+from typing import TextIO
 
 
 class SimpleFormatter(logging.Formatter):
@@ -72,7 +73,7 @@ class JSONFormatter(logging.Formatter):
         return json.dumps(message, default=str)
 
 
-def setup_logging(json: bool = True) -> None:
+def setup_logging(json: bool = True, stream: TextIO = sys.stderr) -> None:
     LOG_CONFIG = dict(
         version=1,
         disable_existing_loggers=False,
@@ -91,7 +92,7 @@ def setup_logging(json: bool = True) -> None:
             "console": {
                 "class": "logging.StreamHandler",
                 "formatter": "generic" if json else "simple",
-                "stream": sys.stdout,
+                "stream": stream,
             },
         },
         formatters={
