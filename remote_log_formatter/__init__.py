@@ -106,3 +106,7 @@ def setup_logging(json: bool = True, stream: TextIO = sys.stderr) -> None:
 
 def get_logger(name: str = "remote") -> logging.Logger:
     return logging.getLogger(name)
+
+
+def set_logging_level(logger: str, level: logging._Level) -> None:
+    logging.getLogger(logger).setLevel(level)
