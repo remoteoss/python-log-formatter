@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "remote-log-formatter"
-version = "0.1.2"
+version = "0.1.3"
 description = ""
 authors = ["Paolo Quadri <paolo.quadri@remote.com>"]
 readme = "README.md"
